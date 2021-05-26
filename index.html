@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Calculator app | Frontend Mentor</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- GOOGLE FONTS  -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="container">
+    <div class="head">
+      <h1>calculator</h1>
+    </div>
+    <div class="entry">
+      <input type="text" name="box" id="box">
+    </div>
+    <div class="calc-main">
+      <div class="buttons">
+        <div>
+          <input type="button" onclick="entry('7')" value="7">
+          <input type="button" onclick="entry('4')" value="4">
+          <input type="button" onclick="entry('1')" value="1">
+          <input type="button" onclick="entry('.')" value=".">
+        </div>
+        <div>
+          <input type="button" onclick="entry('8')" value="8">
+          <input type="button" onclick="entry('5')" value="5">
+          <input type="button" onclick="entry('2')" value="2">
+          <input type="button" onclick="entry('0')" value="0">
+        </div>
+        <div>
+          <input type="button" onclick="entry('9')" value="9">
+          <input type="button" onclick="entry('6')" value="6">
+          <input type="button" onclick="entry('3')" value="3">
+          <input class="div" type="button" onclick="entry('/')" value="/">
+        </div>
+        <div>
+          <input class="del" type="button" onclick="del()" value="DEL">
+          <input class="add" type="button" onclick="entry('+')" value="+">
+          <input class="sub" type="button" onclick="entry('-')" value="-">
+          <input class="mul" type="button" onclick="entry('*')" value="x">
+        </div>
+      </div>
+      <div class="extras">
+        <input class="res" type="button" onclick="reset()" value="RESET">
+        <input class="eq" type="button" onclick="evalFn()" value="=">
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Keshav Arora</a>.
+  </div>
+
+  <!-- JQUERY CDN  -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  
+  <!-- JS FILE  -->
+  <script src="index.js"></script>
+
+
+
+</body>
+</html>

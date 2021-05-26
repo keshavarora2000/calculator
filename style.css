@@ -1,0 +1,130 @@
+* , *::before, *::after {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(222, 26%, 31%);
+    font-weight: 700;
+    font-family: 'Spartan', sans-serif;
+}
+
+h1 {
+    margin: 0;
+}
+
+.container {
+    margin: 5rem auto;
+    max-width: 400px;
+}
+
+.buttons , .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .head {
+    margin-left: 0.7rem;
+    align-self: flex-start;
+    color: #fff;
+}
+
+.entry input {
+    width: 383px;
+    height: 80px;
+    color: #fff;
+    font-size: 32px;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    border: 0;
+    border-radius: 8px;
+    background-color: hsl(224, 36%, 15%);
+} 
+
+.entry input:focus {
+    caret-color: transparent;
+    outline: none;
+}
+
+.calc-main {
+    display: flex;
+    flex-direction: column;
+    width: 383px;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: hsl(224, 36%, 15%);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0.8rem;
+}
+
+.buttons input {
+    color: hsl(221, 14%, 31%);
+    font-size: 26px;
+    font-family: 'Spartan', sans-serif;
+    height: 40px;
+    width: 72px;
+    font-weight: 700;
+    padding-top: 0.5rem;
+    margin-bottom: 0.8rem;
+    box-shadow: 0 3px 0 hsl(28, 16%, 65%);
+    border: 0;
+    border-bottom: 5px solid hsl;
+    border-radius: 8px;
+    background-color: hsl(30, 25%, 89%);
+}
+
+.buttons input:hover, .extras input:hover {
+    opacity: 0.8;
+}
+
+.extras input {
+    color: #fff;
+    height: 45px;
+    width: 151px;
+    font-size: 14px;    
+    font-weight: 700;
+    font-family: 'Spartan', sans-serif;
+    border: 0;
+    padding-top: 0.3rem;
+    margin-left: 0.8rem;
+    border-radius: 8px;
+}
+
+.res , .buttons div .del {
+    font-family: 'Spartan', sans-serif;
+    box-shadow: 0 3px 0 hsl(224, 28%, 35%);
+    background-color: hsl(225, 21%, 49%);
+}
+
+.buttons div .del {
+    color: #fff;
+    font-size: 14px;    
+}
+
+.eq {
+    box-shadow: 0 3px 0 hsl(6, 70%, 34%);
+    background-color: hsl(6, 63%, 50%);
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: #fff; }
+
+@media (max-width: 425px ) {
+    .entry input {
+        width: 353px;
+    }
+
+    .calc-main {
+        width: 353px;
+        height: auto;
+        padding: 2rem 0;
+    }
+}
